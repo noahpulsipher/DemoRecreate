@@ -54,14 +54,38 @@
 		E4E8813B1F8D3BF700CAD016 /* DemoRecreate */ = {
 			isa = PBXGroup;
 			children = (
-				E4E8813C1F8D3BF700CAD016 /* AppDelegate.swift */,
-				E4E8813E1F8D3BF700CAD016 /* ViewController.swift */,
-				E4E881401F8D3BF700CAD016 /* Main.storyboard */,
-				E4E881431F8D3BF700CAD016 /* Assets.xcassets */,
-				E4E881451F8D3BF700CAD016 /* LaunchScreen.storyboard */,
-				E4E881481F8D3BF700CAD016 /* Info.plist */,
+				E4E8814E1F8D4DDB00CAD016 /* Controller */,
+				E4E8814F1F8D4E1500CAD016 /* View */,
+				E4E881501F8D4E3800CAD016 /* Recources */,
 			);
 			path = DemoRecreate;
+			sourceTree = "<group>";
+		};
+		E4E8814E1F8D4DDB00CAD016 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E4E8813C1F8D3BF700CAD016 /* AppDelegate.swift */,
+				E4E8813E1F8D3BF700CAD016 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E4E8814F1F8D4E1500CAD016 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E4E881401F8D3BF700CAD016 /* Main.storyboard */,
+				E4E881451F8D3BF700CAD016 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E4E881501F8D4E3800CAD016 /* Recources */ = {
+			isa = PBXGroup;
+			children = (
+				E4E881431F8D3BF700CAD016 /* Assets.xcassets */,
+				E4E881481F8D3BF700CAD016 /* Info.plist */,
+			);
+			path = Recources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,7 +299,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DemoRecreate/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DemoRecreate/Recources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CTEC.DemoRecreate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -289,7 +313,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DemoRecreate/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DemoRecreate/Recources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CTEC.DemoRecreate;
 				PRODUCT_NAME = "$(TARGET_NAME)";

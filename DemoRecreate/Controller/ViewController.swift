@@ -21,19 +21,13 @@ class ViewController: UIViewController
     
     @IBAction func firstMethod(_ sender: UIButton)
     {
-        if (firstButton.backgroundColor == .orange)
-        {
-            firstButton.backgroundColor = .black
-        }
-        else
-        {
-            firstButton.backgroundColor = .orange
-        }
         view.backgroundColor = createRandomColor()
+        firstButton.setTitleColor(createRandomColor(), for: .normal)
     }
     
     private func createRandomColor() -> UIColor
     {
+        //Colors are CGFloat
         let newColor: UIColor
         let redValue: CGFloat = CGFloat (Double(arc4random_uniform(256)) / 255.00)
         let greenValue: CGFloat = CGFloat (Double(arc4random_uniform(256)) / 255.00)
@@ -47,7 +41,4 @@ class ViewController: UIViewController
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
-
