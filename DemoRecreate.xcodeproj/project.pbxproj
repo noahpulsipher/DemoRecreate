@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E42842BB1F8FF5400061D84F /* SecondScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42842BA1F8FF5400061D84F /* SecondScreenController.swift */; };
+		E42842BF1F8FF9CA0061D84F /* ColorTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42842BE1F8FF9CA0061D84F /* ColorTools.swift */; };
 		E4E8813D1F8D3BF700CAD016 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E8813C1F8D3BF700CAD016 /* AppDelegate.swift */; };
 		E4E8813F1F8D3BF700CAD016 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E8813E1F8D3BF700CAD016 /* ViewController.swift */; };
 		E4E881421F8D3BF700CAD016 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4E881401F8D3BF700CAD016 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		E42842BA1F8FF5400061D84F /* SecondScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenController.swift; sourceTree = "<group>"; };
+		E42842BE1F8FF9CA0061D84F /* ColorTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTools.swift; sourceTree = "<group>"; };
 		E4E881391F8D3BF700CAD016 /* DemoRecreate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoRecreate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4E8813C1F8D3BF700CAD016 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4E8813E1F8D3BF700CAD016 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E42842BC1F8FF98D0061D84F /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				E42842BE1F8FF9CA0061D84F /* ColorTools.swift */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		E4E881301F8D3BF700CAD016 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +66,7 @@
 		E4E8813B1F8D3BF700CAD016 /* DemoRecreate */ = {
 			isa = PBXGroup;
 			children = (
+				E42842BC1F8FF98D0061D84F /* New Group */,
 				E4E8814E1F8D4DDB00CAD016 /* Controller */,
 				E4E8814F1F8D4E1500CAD016 /* View */,
 				E4E881501F8D4E3800CAD016 /* Recources */,
@@ -166,6 +177,7 @@
 				E4E8813F1F8D3BF700CAD016 /* ViewController.swift in Sources */,
 				E4E8813D1F8D3BF700CAD016 /* AppDelegate.swift in Sources */,
 				E42842BB1F8FF5400061D84F /* SecondScreenController.swift in Sources */,
+				E42842BF1F8FF9CA0061D84F /* ColorTools.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

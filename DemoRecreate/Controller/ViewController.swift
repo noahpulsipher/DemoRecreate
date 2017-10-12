@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController
 {
+    private lazy var colorTool : ColorTools = ColorTools()
 
     @IBOutlet weak var Slider: UISlider!
     
@@ -28,12 +29,12 @@ class ViewController: UIViewController
     }
     @IBAction func sliderMethod(_ sender: UISlider)
     {
-        view.backgroundColor = createRandomColor()
-        firstButton.setTitleColor(createRandomColor(), for: .normal)
-        firstButton.backgroundColor = createRandomColor()
-        Slider.backgroundColor = createRandomColor()
-        textBox.backgroundColor = createRandomColor()
-        textBox.textColor = createRandomColor()
+        view.backgroundColor = colorTool.createRandomColor()
+        firstButton.setTitleColor(colorTool.createRandomColor(), for: .normal)
+        firstButton.backgroundColor = colorTool.createRandomColor()
+        Slider.backgroundColor = colorTool.createRandomColor()
+        textBox.backgroundColor = colorTool.createRandomColor()
+        textBox.textColor = colorTool.createRandomColor()
     }
     
     @IBOutlet weak var firstButton: UIButton!
@@ -46,20 +47,12 @@ class ViewController: UIViewController
     
     @IBAction func firstMethod(_ sender: UIButton)
     {
-        view.backgroundColor = createRandomColor()
-        firstButton.setTitleColor(createRandomColor(), for: .normal)
+        view.backgroundColor = colorTool.createRandomColor()
+        firstButton.setTitleColor(colorTool.createRandomColor(), for: .normal)
+        firstButton.setTitleColor(colorTool.createRandomColor(), for: .normal)
     }
     
-    private func createRandomColor() -> UIColor
-    {
-        //Colors are CGFloat
-        let newColor: UIColor
-        let redValue: CGFloat = CGFloat (Double(arc4random_uniform(256)) / 255.00)
-        let greenValue: CGFloat = CGFloat (Double(arc4random_uniform(256)) / 255.00)
-        let blueValue: CGFloat = CGFloat (Double(arc4random_uniform(256)) / 255.00)
-        newColor = UIColor(red: redValue, green: greenValue, blue: blueValue, alpha: CGFloat(1.0))
-        return newColor
-    }
+   
     
     override func didReceiveMemoryWarning()
     {
