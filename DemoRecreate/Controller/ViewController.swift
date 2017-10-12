@@ -24,7 +24,7 @@ class ViewController: UIViewController
         firstButton.backgroundColor = .black
         Slider.backgroundColor = .black
         textBox.backgroundColor = .black
-        textBox.textColor = .black
+        textBox.textColor = .red
     }
     @IBAction func sliderMethod(_ sender: UISlider)
     {
