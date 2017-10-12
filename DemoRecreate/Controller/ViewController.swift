@@ -27,6 +27,7 @@ class ViewController: UIViewController
         textBox.backgroundColor = .black
         textBox.textColor = .red
     }
+    
     @IBAction func sliderMethod(_ sender: UISlider)
     {
         view.backgroundColor = colorTool.createRandomColor()
