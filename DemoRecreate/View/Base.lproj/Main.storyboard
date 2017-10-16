@@ -104,10 +104,10 @@
             </objects>
             <point key="canvasLocation" x="506.39999999999998" y="118.29085457271366"/>
         </scene>
-        <!--View Controller-->
+        <!--Third Screen View Controller-->
         <scene sceneID="cQt-if-toi">
             <objects>
-                <viewController id="m2U-L3-x5A" sceneMemberID="viewController">
+                <viewController id="m2U-L3-x5A" customClass="ThirdScreenViewController" customModule="DemoRecreate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jW8-hu-et6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
