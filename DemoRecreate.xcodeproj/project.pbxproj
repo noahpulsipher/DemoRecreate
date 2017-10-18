@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E42842BB1F8FF5400061D84F /* SecondScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42842BA1F8FF5400061D84F /* SecondScreenController.swift */; };
 		E42842BF1F8FF9CA0061D84F /* ColorTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42842BE1F8FF9CA0061D84F /* ColorTools.swift */; };
 		E4D4800A1F9539E400ED439D /* ThirdScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D480091F9539E400ED439D /* ThirdScreenViewController.swift */; };
 		E4E8813D1F8D3BF700CAD016 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E8813C1F8D3BF700CAD016 /* AppDelegate.swift */; };
@@ -18,7 +17,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E42842BA1F8FF5400061D84F /* SecondScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenController.swift; sourceTree = "<group>"; };
 		E42842BE1F8FF9CA0061D84F /* ColorTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTools.swift; sourceTree = "<group>"; };
 		E4D480091F9539E400ED439D /* ThirdScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdScreenViewController.swift; sourceTree = "<group>"; };
 		E4E881391F8D3BF700CAD016 /* DemoRecreate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoRecreate.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,7 +79,6 @@
 			children = (
 				E4E8813C1F8D3BF700CAD016 /* AppDelegate.swift */,
 				E4E8813E1F8D3BF700CAD016 /* ViewController.swift */,
-				E42842BA1F8FF5400061D84F /* SecondScreenController.swift */,
 				E4D480091F9539E400ED439D /* ThirdScreenViewController.swift */,
 			);
 			path = Controller;
@@ -180,7 +177,6 @@
 				E4E8813F1F8D3BF700CAD016 /* ViewController.swift in Sources */,
 				E4D4800A1F9539E400ED439D /* ThirdScreenViewController.swift in Sources */,
 				E4E8813D1F8D3BF700CAD016 /* AppDelegate.swift in Sources */,
-				E42842BB1F8FF5400061D84F /* SecondScreenController.swift in Sources */,
 				E42842BF1F8FF9CA0061D84F /* ColorTools.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,7 +10,31 @@ import UIKit
 
 public class ThirdScreenViewController: UIViewController
 {
-
+    
+    @IBOutlet weak var firstImageView: UIImageView!
+    
+    @IBAction func firstSliderMethod(_ sender: UISlider)
+    {
+    
+    }
+    
+    @IBOutlet weak var firstSlider: UISlider!
+    
+    @IBAction func secondButtonMethod(_ sender: UIButton)
+    {
+    
+    }
+    
+    @IBOutlet weak var secoondButton: UIButton!
+    
+    
+    @IBAction func firstButtonMethod(_ sender: UIButton)
+    {
+    
+    }
+    
+    @IBOutlet weak var firstButton: UIButton!
+    
     public override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -24,7 +48,12 @@ public class ThirdScreenViewController: UIViewController
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBOutlet weak var homeButton: UIButton!
+    
+    @IBAction func homeButtonMethod(_ sender: UIButton)
+    {
+    
+    }
     /*
     // MARK: - Navigation
 
