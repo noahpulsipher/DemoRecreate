@@ -95,23 +95,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyf-JP-Rfq">
-                                <rect key="frame" x="6" y="8" width="77" height="30"/>
+                                <rect key="frame" x="16" y="20" width="77" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="To Home"/>
+                                <state key="normal" title="Home"/>
                                 <connections>
                                     <action selector="homeButtonMethod:" destination="m2U-L3-x5A" eventType="touchUpInside" id="bW2-qy-GAt"/>
                                     <segue destination="BYZ-38-t0r" kind="show" id="wcH-JP-2Ds"/>
                                 </connections>
                             </button>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="APB-dX-Bvh">
-                                <rect key="frame" x="128" y="338" width="118" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="firstSliderMethod:" destination="m2U-L3-x5A" eventType="valueChanged" id="rlJ-H0-dTr"/>
-                                </connections>
-                            </slider>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jvk-95-7cx">
-                                <rect key="frame" x="158" y="271" width="59" height="30"/>
+                                <rect key="frame" x="248" y="171" width="59" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button 2"/>
                                 <connections>
@@ -119,7 +112,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XUw-xf-wHQ">
-                                <rect key="frame" x="159" y="215" width="57" height="30"/>
+                                <rect key="frame" x="67" y="171" width="57" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button 1"/>
                                 <connections>
@@ -127,9 +120,16 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t7R-Cp-a95">
-                                <rect key="frame" x="67" y="402" width="240" height="128"/>
+                                <rect key="frame" x="40" y="269" width="298" height="301"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="APB-dX-Bvh">
+                                <rect key="frame" x="65" y="209" width="244" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="firstSliderMethod:" destination="m2U-L3-x5A" eventType="valueChanged" id="rlJ-H0-dTr"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="PO6-o4-OMK"/>
@@ -144,7 +144,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C0U-dp-1WU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1682" y="148"/>
+            <point key="canvasLocation" x="1680.8" y="147.97601199400302"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="VmR-MT-dCk">

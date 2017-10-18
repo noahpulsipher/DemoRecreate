@@ -10,6 +10,34 @@ import UIKit
 
 public class ThirdScreenViewController: UIViewController
 {
+    private lazy var color: ColorTools = ColorTools()
+    
+    private var imageCounter: Int = 0
+    
+    private func changeImage() -> Void
+    {
+        if (imageCounter > 2)
+        {
+            imageCounter = 0
+        }
+        
+        if (imageCounter == 0)
+        {
+            firstImageView.image = UIImage(named: "legoBatman")
+        }
+            
+        else if (imageCounter == 1)
+        {
+            firstImageView.image = UIImage(named: "Po")
+        }
+            
+        else
+        {
+            firstImageView.image = UIImage(named: "roblox")
+        }
+        
+        imageCounter += 1
+    }
     
     @IBOutlet weak var firstImageView: UIImageView!
     
@@ -30,7 +58,8 @@ public class ThirdScreenViewController: UIViewController
     
     @IBAction func firstButtonMethod(_ sender: UIButton)
     {
-    
+        changeImage()
+        view.backgroundColor = color.createRandomColor()
     }
     
     @IBOutlet weak var firstButton: UIButton!
