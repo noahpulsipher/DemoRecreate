@@ -8,9 +8,12 @@
 
 import UIKit
 
+
 public class ThirdScreenViewController: UIViewController
 {
     private lazy var color: ColorTools = ColorTools()
+    
+    private var soundPlayer: AVAudioPlayer?
     
     private var imageCounter: Int = 0
     
@@ -50,9 +53,28 @@ public class ThirdScreenViewController: UIViewController
     
     @IBAction func secondButtonMethod(_ sender: UIButton)
     {
-    
+        
     }
     
+    private func loadAudioFile() -> Void
+    {
+        if let soundURL = NSDataAsset(name: "Smash")
+        {
+            do
+            {
+                try! AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+                try! AVAudioSession.sharedInstce().setActive(true)
+                
+                try! soundPlayer = AVAudioPlayer(data: soundURL.data, fileTypeHint: AVFileType.mp3.rawValue)
+                soundSlider.maximumValue = Float ((soundPlayer?.duration)!)
+               // Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: (#selector(self.updateSlider)), userInfo: nil, repeats: true)
+            }
+            catch
+            {
+                print("Audio File Load Error")
+            }
+        }
+    }
     @IBOutlet weak var secoondButton: UIButton!
     
     
@@ -64,9 +86,10 @@ public class ThirdScreenViewController: UIViewController
     
     @IBOutlet weak var firstButton: UIButton!
     
-    public override func viewDidLoad()
+    public override func viewDidLoad() -> Void
     {
         super.viewDidLoad()
+        loadAudioFile()
 
         // Do any additional setup after loading the view.
     }
