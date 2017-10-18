@@ -23,17 +23,17 @@ public class ThirdScreenViewController: UIViewController
         
         if (imageCounter == 0)
         {
-            firstImageView.image = UIImage(named: "legoBatman")
+            firstImageView.image = UIImage(named: "megaman")
         }
             
         else if (imageCounter == 1)
         {
-            firstImageView.image = UIImage(named: "Po")
+            firstImageView.image = UIImage(named: "link")
         }
             
         else
         {
-            firstImageView.image = UIImage(named: "roblox")
+            firstImageView.image = UIImage(named: "sonic")
         }
         
         imageCounter += 1

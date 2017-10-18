@@ -94,17 +94,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyf-JP-Rfq">
-                                <rect key="frame" x="16" y="20" width="77" height="30"/>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="APB-dX-Bvh">
+                                <rect key="frame" x="80" y="209" width="244" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Home"/>
                                 <connections>
-                                    <action selector="homeButtonMethod:" destination="m2U-L3-x5A" eventType="touchUpInside" id="bW2-qy-GAt"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="wcH-JP-2Ds"/>
+                                    <action selector="firstSliderMethod:" destination="m2U-L3-x5A" eventType="valueChanged" id="rlJ-H0-dTr"/>
                                 </connections>
-                            </button>
+                            </slider>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jvk-95-7cx">
-                                <rect key="frame" x="248" y="171" width="59" height="30"/>
+                                <rect key="frame" x="263" y="171" width="59" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button 2"/>
                                 <connections>
@@ -112,7 +110,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XUw-xf-wHQ">
-                                <rect key="frame" x="67" y="171" width="57" height="30"/>
+                                <rect key="frame" x="82" y="171" width="57" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button 1"/>
                                 <connections>
@@ -120,16 +118,18 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t7R-Cp-a95">
-                                <rect key="frame" x="40" y="269" width="298" height="301"/>
+                                <rect key="frame" x="53" y="264" width="298" height="301"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="APB-dX-Bvh">
-                                <rect key="frame" x="65" y="209" width="244" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyf-JP-Rfq">
+                                <rect key="frame" x="29" y="20" width="77" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Home"/>
                                 <connections>
-                                    <action selector="firstSliderMethod:" destination="m2U-L3-x5A" eventType="valueChanged" id="rlJ-H0-dTr"/>
+                                    <action selector="homeButtonMethod:" destination="m2U-L3-x5A" eventType="touchUpInside" id="bW2-qy-GAt"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="wcH-JP-2Ds"/>
                                 </connections>
-                            </slider>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="PO6-o4-OMK"/>
