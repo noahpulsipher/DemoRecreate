@@ -124,7 +124,7 @@
                         <outlet property="firstImageView" destination="t7R-Cp-a95" id="k8o-HZ-S9z"/>
                         <outlet property="firstSlider" destination="APB-dX-Bvh" id="0bG-Xu-7Jd"/>
                         <outlet property="homeButton" destination="nyf-JP-Rfq" id="9U3-0Z-pNJ"/>
-                        <outlet property="secoondButton" destination="Jvk-95-7cx" id="4qO-dT-51B"/>
+                        <outlet property="secondButton" destination="Jvk-95-7cx" id="urb-To-3FV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C0U-dp-1WU" userLabel="First Responder" sceneMemberID="firstResponder"/>

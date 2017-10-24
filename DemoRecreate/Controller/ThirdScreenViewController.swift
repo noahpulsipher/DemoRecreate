@@ -4,10 +4,10 @@
 //
 //  Created by Pulsipher, Noah on 10/16/17.
 //  Copyright © 2017 CTEC. All rights reserved.
-//
 
 import UIKit
 
+import AVFoundation
 
 public class ThirdScreenViewController: UIViewController
 {
@@ -46,14 +46,20 @@ public class ThirdScreenViewController: UIViewController
     
     @IBAction func firstSliderMethod(_ sender: UISlider)
     {
-    
+        let seekTime = Double (firstSlider.value)
+        soundPlayer?.currentTime = seekTime
     }
     
+    private func playMusicFile () -> Void
+    {
+        soundPlayer?.play()
+    }
     @IBOutlet weak var firstSlider: UISlider!
     
     @IBAction func secondButtonMethod(_ sender: UIButton)
     {
-        
+        playMusicFile()
+        view.backgroundColor = color.createRandomColor()
     }
     
     private func loadAudioFile() -> Void
@@ -63,11 +69,11 @@ public class ThirdScreenViewController: UIViewController
             do
             {
                 try! AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
-                try! AVAudioSession.sharedInstce().setActive(true)
+                try! AVAudioSession.sharedInstance().setActive(true)
                 
-                try! soundPlayer = AVAudioPlayer(data: soundURL.data, fileTypeHint: AVFileType.mp3.rawValue)
-                soundSlider.maximumValue = Float ((soundPlayer?.duration)!)
-               // Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: (#selector(self.updateSlider)), userInfo: nil, repeats: true)
+                try soundPlayer = AVAudioPlayer(data: soundURL.data, fileTypeHint: AVFileType.mp3.rawValue)
+                firstSlider.maximumValue = Float ((soundPlayer?.duration)!)
+                Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: (#selector(self.updateSlider)), userInfo: nil, repeats: true)
             }
             catch
             {
@@ -75,8 +81,13 @@ public class ThirdScreenViewController: UIViewController
             }
         }
     }
-    @IBOutlet weak var secoondButton: UIButton!
+   
+    @objc private func updateSlider() -> Void
+    {
+        firstSlider.value = Float ((soundPlayer?.currentTime)!)
+    }
     
+    @IBOutlet weak var secondButton: UIButton!
     
     @IBAction func firstButtonMethod(_ sender: UIButton)
     {
@@ -106,6 +117,7 @@ public class ThirdScreenViewController: UIViewController
     {
     
     }
+    
     /*
     // MARK: - Navigation
 
@@ -115,5 +127,4 @@ public class ThirdScreenViewController: UIViewController
         // Pass the selected object to the new view controller.
     }
     */
-
 }
