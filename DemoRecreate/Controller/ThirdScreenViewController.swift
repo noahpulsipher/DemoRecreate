@@ -52,8 +52,27 @@ public class ThirdScreenViewController: UIViewController
     
     private func playMusicFile () -> Void
     {
-        soundPlayer?.play()
+        if let isPlaying = soundPlayer?.isPlaying
+        {
+            if (isPlaying)
+            {
+                soundPlayer?.pause()
+            }
+            else
+            {
+                soundPlayer?.play()
+            }
+        }
+//        if((soundPlayer?.isPlaying)!)
+//        {
+//            soundPlayer?.pause()
+//        }
+//        else
+//        {
+//            soundPlayer?.play()
+//        }
     }
+    
     @IBOutlet weak var firstSlider: UISlider!
     
     @IBAction func secondButtonMethod(_ sender: UIButton)
@@ -64,7 +83,7 @@ public class ThirdScreenViewController: UIViewController
     
     private func loadAudioFile() -> Void
     {
-        if let soundURL = NSDataAsset(name: "Smash")
+        if let soundURL = NSDataAsset(name: "smash")
         {
             do
             {
